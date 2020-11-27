@@ -18,10 +18,10 @@ export const movieApi = {
 				append_to_response: "videos",
 			},
 		}),
-	search: (term) =>
+	search: (words) =>
 		api.get("search/movie", {
 			params: {
-				query: encodeURIComponent(term),
+				query: encodeURIComponent(words),
 			},
 		}),
 };
@@ -36,10 +36,10 @@ export const tvApi = {
 				append_to_response: "videos",
 			},
 		}),
-	search: (term) =>
+	search: (words) =>
 		api.get("search/tv", {
 			params: {
-				query: encodeURIComponent(term),
+				query: encodeURIComponent(words),
 			},
 		}),
 };
