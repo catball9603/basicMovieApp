@@ -1,14 +1,24 @@
 # Basic Movie, Tv show App
 
-### React and ES6 by building App.
+## React and ES6 by building App.
 
-#
+### 1. Screens (routes)
+- [x] Home
+- [x] Tv Show
+- [x] Search
+- [x] Detail 
+---
+### 2. API
+- Movie
+- [x] NowPlaying
+- [x] Popular 
+- [x] Upcoming 
+- [ ] Movie Detail
+- [ ] Search 
 
-## 1. Screens (routes)
-
-- Home
-- Tv Show
-- Search
-- Detail
-
-## 2.
+- Tv
+- [x] Top Rated
+- [x] Popular
+- [x] Airing Today
+- [ ] Tv Detail
+- [ ] Search

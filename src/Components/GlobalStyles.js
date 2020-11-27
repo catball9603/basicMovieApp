@@ -3,6 +3,9 @@ import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
 ${reset}
+html {
+    font-size: 0.625rem;
+}
 * {
     padding: 0; margin: 0;
     box-sizing: border-box;
@@ -10,11 +13,11 @@ ${reset}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    background-color: rgba(20,20,20, 1);
+    background-color: #212529;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 60px;
     list-style: none; 
+    font-size:1.6rem;
 }
 
 a {

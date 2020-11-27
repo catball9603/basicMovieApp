@@ -11,7 +11,7 @@ const HeaderStyle = styled.header`
 	display: flex;
 	align-items: center;
 	z-index: 10;
-	background-color: rgba(20, 20, 20, 0.8);
+	background-color: #212529;
 	box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8);
 `;
 const UlStyle = styled.ul`
@@ -29,7 +29,7 @@ const LinkStyle = styled(Link)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.25rem;
+	font-size: 1.8rem;
 	color: #fff;
 `;
 
