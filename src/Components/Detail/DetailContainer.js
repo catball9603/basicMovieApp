@@ -1,10 +1,11 @@
-import { movieApi, tvApi } from "api";
 import React from "react";
 import DetialPresenter from "./DetialPresenter";
+import { movieApi, tvApi } from "api";
 
 class DetailContainer extends React.Component {
 	constructor(props) {
 		super(props);
+
 		const {
 			location: { pathname },
 		} = props;
