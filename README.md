@@ -22,7 +22,7 @@
 - [x] Airing Today
 - [x] Tv Detail
 - [x] Search
-
+___
 ### 3. Deployment(gh-pages)
 
 [TTiving](https://catball9603.github.io/basicMovieApp "buildPages")
