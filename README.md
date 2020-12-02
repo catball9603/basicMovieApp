@@ -23,8 +23,10 @@
 - [x] Tv Detail
 - [x] Search
 ___
-### 3. Deployment(gh-pages)
+### 3. Preview 
 
-[TTiving](https://catball9603.github.io/basicMovieApp "buildPages")
+Try it on [netlify](https://happy-johnson-e5ebf3.netlify.app/)
+
+
 
 
