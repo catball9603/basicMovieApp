@@ -1,6 +1,6 @@
 import React from "react";
 import SearchPresenter from "./SearchPresenter";
-import { movieApi, tvApi } from "api";
+import { moviesApi, tvApi } from "api";
 
 class SearchContainer extends React.Component {
 	state = {
@@ -11,31 +11,42 @@ class SearchContainer extends React.Component {
 		error: null,
 	};
 
-	handleSubmit = () => {
+	//saarchByWord 함수를 실행시키는 함수
+	handleSubmit = (e) => {
+		e.preventDefault();
 		const { searchWord } = this.state;
 		if (searchWord !== "") {
 			this.searchByWord();
 		}
 	};
 
+	//input searchWord
+	updateWrod = (e) => {
+		const {
+			target: { value },
+		} = e;
+		this.setState({
+			searchWord: value,
+		});
+	};
+
 	async searchByWord() {
 		const { searchWord } = this.state;
 		this.setState({ loading: true });
 
-		const {
-			data: { results: movieResults },
-		} = await movieApi.search(searchWord);
-
-		const {
-			data: { results: tvResults },
-		} = await tvApi.search(searchWord);
-
-		this.setState({
-			movieResults,
-			tvResults,
-		});
-
 		try {
+			const {
+				data: { results: movieResults },
+			} = await moviesApi.search(searchWord);
+
+			const {
+				data: { results: tvResults },
+			} = await tvApi.search(searchWord);
+
+			this.setState({
+				movieResults,
+				tvResults,
+			});
 		} catch (error) {
 			this.setState({ error: "Can't find results." });
 		} finally {
@@ -53,6 +64,7 @@ class SearchContainer extends React.Component {
 				loading={loading}
 				error={error}
 				handleSubmit={this.handleSubmit}
+				updateWrod={this.updateWrod}
 			/>
 		);
 	}

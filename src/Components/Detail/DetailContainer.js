@@ -1,6 +1,6 @@
 import React from "react";
 import DetialPresenter from "./DetialPresenter";
-import { movieApi, tvApi } from "api";
+import { moviesApi, tvApi } from "api";
 
 class DetailContainer extends React.Component {
 	constructor(props) {
@@ -14,7 +14,8 @@ class DetailContainer extends React.Component {
 			result: null,
 			loading: true,
 			error: null,
-			isMovie: pathname.include("/movie/"),
+			isMovie: pathname.includes("/movie/"),
+			// istv: pathname.includes("/tv/"),
 		};
 	}
 
@@ -36,7 +37,7 @@ class DetailContainer extends React.Component {
 		let result = null;
 		try {
 			if (isMovie) {
-				({ data: result } = await movieApi.movieDetail(parsedId));
+				({ data: result } = await moviesApi.movieDetail(parsedId));
 			} else {
 				({ data: result } = await tvApi.tvDetail(parsedId));
 			}
@@ -54,6 +55,7 @@ class DetailContainer extends React.Component {
 
 	render() {
 		const { result, loading, error } = this.state;
+
 		return <DetialPresenter result={result} loading={loading} error={error} />;
 	}
 }

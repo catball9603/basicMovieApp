@@ -7,7 +7,7 @@ class TvContainer extends React.Component {
 		topRated: null,
 		popular: null,
 		airingToday: null,
-		loading: false,
+		loading: true,
 		error: null,
 	};
 

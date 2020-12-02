@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link, withRouter } from "react-router-dom";
+import styled from "styled-components";
 
 const HeaderStyle = styled.header`
 	position: fixed;
@@ -22,7 +22,7 @@ const LiStyle = styled.li`
 	height: 50px;
 	transition: all 0.5s ease-in;
 	border-bottom: 5px solid
-		${(props) => (props.current ? '#c92a2a' : 'transparent')};
+		${(props) => (props.current ? "#ff3838" : "transparent")};
 `;
 const LinkStyle = styled(Link)`
 	height: 100%;
@@ -37,13 +37,13 @@ function Header({ location: { pathname } }) {
 	return (
 		<HeaderStyle>
 			<UlStyle>
-				<LiStyle current={pathname === '/'}>
+				<LiStyle current={pathname === "/"}>
 					<LinkStyle to='/'>Movie</LinkStyle>
 				</LiStyle>
-				<LiStyle current={pathname === '/tv'}>
+				<LiStyle current={pathname === "/tv"}>
 					<LinkStyle to='/tv'>Tv show</LinkStyle>
 				</LiStyle>
-				<LiStyle current={pathname === '/search'}>
+				<LiStyle current={pathname === "/search"}>
 					<LinkStyle to='/search'>Search</LinkStyle>
 				</LiStyle>
 			</UlStyle>

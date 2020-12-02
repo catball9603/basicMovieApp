@@ -15,7 +15,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #212529;
     color: #fff;
-    padding-top: 80px;
     list-style: none; 
     font-size:1.6rem;
 }
