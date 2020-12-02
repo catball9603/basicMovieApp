@@ -20,5 +20,11 @@
 - [x] Top Rated
 - [x] Popular
 - [x] Airing Today
-- [ ] Tv Detail
-- [ ] Search
+- [x] Tv Detail
+- [x] Search
+
+### 3. Deployment(gh-pages)
+
+[TTiving](https://catball9603.github.io/basicMovieApp "buildPages")
+
+
