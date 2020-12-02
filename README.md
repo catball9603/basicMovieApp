@@ -13,8 +13,8 @@
 - [x] NowPlaying
 - [x] Popular 
 - [x] Upcoming 
-- [ ] Movie Detail
-- [ ] Search 
+- [x] Movie Detail
+- [x] Search 
 
 - Tv
 - [x] Top Rated
