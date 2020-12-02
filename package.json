@@ -28,7 +28,7 @@
     "predeploy":"yarn run build"
   },
 
-  "homepage": "https://catball9603.github.io/basicMovieApp",
+  "homepage": "https://happy-johnson-e5ebf3.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
